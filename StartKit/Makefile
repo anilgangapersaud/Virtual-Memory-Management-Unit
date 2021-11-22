@@ -4,10 +4,11 @@
 
 CC=gcc
 CFLAGS=-Wall
+DEBUG=-g
 
 clean:
 	rm -rf *.o
 	rm -rf mmu
 	
-mmu: 
-	$(CC) $(CFLAGS) -o mmu mmu.c 
+mmu:
+	$(CC) $(CFLAGS) $(DEBUG) -o mmu mmu.c
